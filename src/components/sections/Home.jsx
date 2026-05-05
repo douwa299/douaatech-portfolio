@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import myImg from "../assets/myimg.png";
 import { RevealOnScroll } from "D:/MyPersonalPortoFolio/src/components/RevealOnScroll.jsx";
 
 
@@ -77,12 +77,12 @@ export const Home = () => {
                   shadow-[0_40px_80px_rgba(0,0,0,0.5)]"
         >
           <img
-            src="src/assets/myimg.png"
+            src={myImg}
             alt="Profile"
             className="w-full h-full object-cover"
           />
 
-          {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div> */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
         </div>
       </div>
 
