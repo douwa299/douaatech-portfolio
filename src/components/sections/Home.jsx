@@ -76,8 +76,7 @@ export const Home = () => {
                   shadow-[0_40px_80px_rgba(0,0,0,0.5)]"
         >
           <img
- src="/myimg.png" 
-  alt="Profile"
+ src="/douaatech-portfolio/myimg.png"             alt="Profile"
             className="w-full h-full object-cover"
           />
 
