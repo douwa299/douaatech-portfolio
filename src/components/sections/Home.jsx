@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import myImg from "../assets/myimg.png";
 import { RevealOnScroll } from "D:/MyPersonalPortoFolio/src/components/RevealOnScroll.jsx";
 
 
@@ -77,8 +76,8 @@ export const Home = () => {
                   shadow-[0_40px_80px_rgba(0,0,0,0.5)]"
         >
           <img
-            src={myImg}
-            alt="Profile"
+ src="/myimg.png" 
+  alt="Profile"
             className="w-full h-full object-cover"
           />
 
