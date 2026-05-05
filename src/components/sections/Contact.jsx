@@ -2,7 +2,9 @@ import { RevealOnScroll } from "D:/MyPersonalPortoFolio/src/components/RevealOnS
 
 import { useState } from "react";
 
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
+
+
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,25 +13,28 @@ export const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        e.target,
-        import.meta.env.VITE_PUBLIC_KEY,
-      )
-      .then((result) => {
-        alert("Message sent !");
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
-      })
-      .catch(() => alert("Oops! Something went wrong. Please try again."));
-  };
+  emailjs.init(import.meta.env.VITE_PUBLIC_KEY);
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      import.meta.env.VITE_SERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+      e.target
+    )
+    .then(() => {
+      alert("Message sent!");
+      setFormData({ name: "", email: "", message: "" });
+    })
+    .catch((error) =>{ 
+     console.log("EMAILJS ERROR:", error);
+
+        
+        
+        alert("Oops! Something went wrong.")});
+};
 
   return (
     <section
@@ -91,7 +96,7 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-500 py-3 px-6 rouonded font-medium transition relative overflow-hidden overflow-hidden hover:-translate-y-0.5 
+              className="w-full bg-blue-500 py-3 px-6 rounded font-medium transition relative overflow-hidden overflow-hidden hover:-translate-y-0.5 
             hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] hover:cursor-pointer"
             >
               Send A Message

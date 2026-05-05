@@ -1,6 +1,6 @@
 {
   "name": "mypersonalportofolio",
-  "homepage":"https://douwa299.github.io/douaatech-portfolio",
+  "homepage": "https://douwa299.github.io/douaatech-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,12 +9,12 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.2.4",
-    "emailjs-com": "^3.2.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "tailwindcss": "^4.2.4"
