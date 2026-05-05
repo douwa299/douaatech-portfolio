@@ -1,0 +1,98 @@
+@import "tailwindcss";
+html,body{
+  margin:0;
+  padding:0;
+  font-family: "Space Grotesk",sans-serif;
+  background: #0a0a0a ;
+  color:#f3f4f6;
+}
+
+
+@layer  utilities {
+        @keyframes blink {
+          0%,100% {
+            opacity:1;
+          }
+          50%{
+            opacity  :0;  
+          } 
+          
+        }
+        .animate-blink{
+          animation: blink 0.8s step-end infinite;
+        }
+
+
+  /* creatingana animation */
+           @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100%{
+      transform: translateX(250%);
+    } 
+  }
+
+  /* calling the animationg we  just created  */
+  .animate-loading-bar{
+    animation: loading 0.8s ease infinite;
+  }
+ 
+
+}
+
+@keyframes bounceGentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-bounce-gentle {
+  animation: bounceGentle 2s ease-in-out infinite;
+}
+
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.reveal {
+  view-timeline-name: --rev;
+  view-timeline-axis: block;
+  animation: fade-in linear both;
+  animation-timeline: --rev;
+  animation-range: entry 10% cover 40%;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.reveal{
+  opacity:0;
+  transform:translateY(20px);
+  transition: opacity 0.7sease , transfomr 0.7s ease ;
+
+  
+}
+
+
+.reaveal-visible{
+  opacity: 1;
+  transform: translateY(0);
+
+}
