@@ -4,7 +4,7 @@ import { RevealOnScroll } from "D:/MyPersonalPortoFolio/src/components/RevealOnS
 
 export const Home = () => {
   const [text, setText] = useState("");
-  const fullText = "Hi, I'm Douaa Berrahmo";
+  const fullText = "Hi, I'm Berrahmo Douaa ";
 
   useEffect(() => {
     // Reset text immediately when the component mounts
@@ -34,21 +34,32 @@ export const Home = () => {
     >
       <RevealOnScroll >
         <div className="min-h-screen flex items-center justify-center relative ">
-      <div className="text-center z-10 px-4 w-[800px]">
-        <h1 className="text-3xl md:text-5xl mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
-          {text}
-          <span className="text-white inline-block animate-bounce ml-2">
-            👋
-          </span>
-          <span className="text-white animate-blink ml-1">|</span>
-        </h1>
-        <p className="text-grey-400 text-lg mb-8 max-w-lg mx-auto">
-          Fourth-year engineering student with a strong interest in creating
-          impactful digital solutions. I like exploring new technologies,
-          solving real-world problems, and building projects that combine
-          functionality with simplicity.
-        </p>
-        <div className="flex justify-center space-x-4">
+      <div className=" z-10 px-4 w-[800px]">
+        {/* NAME */}
+  <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
+    {text}
+    <span className="text-white inline-block animate-bounce ml-2">👋</span>
+    <span className="text-white animate-blink ml-1">|</span>
+  </h1>
+        {/* ROLE / TITLE (new addition - makes it more professional) */}
+  <p className="text-blue-400 text-sm md:text-base tracking-widest uppercase mb-3">
+    AI & Software Engineering Student
+  </p>
+
+  
+
+  {/* SHORT TAGLINE (more impactful than paragraph first) */}
+  <p className="text-gray-300 text-lg md:text-xl mb-6 max-w-lg ">
+    I build intelligent systems combining AI, computer vision, and software engineering.
+  </p>
+
+  {/* FULL DESCRIPTION */}
+  <p className="text-gray-400 text-base mb-8 max-w-lg ">
+    Fourth-year engineering student focused on AI and software development.
+    I enjoy creating real-world solutions using machine learning, deep learning,
+    and full-stack technologies — turning ideas into functional, scalable systems.
+  </p>
+        <div className="flex  space-x-4 mx-30">
           <a
             href="#projects"
             className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5
