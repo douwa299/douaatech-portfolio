@@ -18,7 +18,7 @@ export const Navbar = ( {menuOpen,setMenuOpen}) => {
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="font-mono text-xl font-bold text-white">
-            douwa <span className="text-blue-500">.tech</span>{" "}
+            douwa<span className="text-blue-500">.tech</span>{" "}
           </a>
           {/* mobile menu */}
           {/* We're making menu for phone users once opened on a phone the mennu will not show itll show an icone  */}

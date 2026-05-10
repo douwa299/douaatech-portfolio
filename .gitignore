@@ -1,3 +1,6 @@
+# Environment variables
+.env
+
 # Logs
 logs
 *.log
@@ -7,17 +10,23 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+
+# Build output
 dist
 dist-ssr
 *.local
 
-.envgit push -u origin main
-# Editor directories and files
+# Editor files
 .vscode/*
 !.vscode/extensions.json
 .idea
+
+# OS files
 .DS_Store
+
+# Build artifacts
 *.suo
 *.ntvs*
 *.njsproj
