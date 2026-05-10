@@ -32,12 +32,11 @@ export const Home = () => {
       className="min-h-screen flex flex-col items-center justify-around  py-5"
     >
       <RevealOnScroll>
-        <div className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center relative gap-12">
-          <div className="z-10 px-4 w-full max-w-2xl text-center lg:text-left">
+        <div className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center relative gap-1">
+          <div className="z-10 px-4 w-full max-w-5xl text-center lg:text-left">
             {" "}
             {/* NAME */}
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
-              {text}
+<h1 className="text-5xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight lg:min-h-[60px] lg:w-[800px]">              {text}
               <span className="text-white inline-block animate-bounce ml-2">
                 👋
               </span>
@@ -77,7 +76,8 @@ export const Home = () => {
               </a>
             </div>
           </div>
-<div className="hidden lg:block relative px-4 animate-[slideInRight_0.8s_ease-out_forwards]">            {/* glow */}
+
+          <div   className="hidden lg:block relative px-4 animate-[slideInRight_0.8s_ease-out_forwards]">            {/* glow */}
             <div className="absolute -inset-4 bg-blue-500/10 rounded-3xl blur-2xl"></div>
 
             <div
@@ -94,6 +94,7 @@ export const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
             </div>
           </div>
+
         </div>
       </RevealOnScroll>
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
