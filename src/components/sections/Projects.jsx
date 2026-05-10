@@ -99,12 +99,56 @@ tech: ["Python", "OpenCV", "PyTorch", "TensorFlow", "YOLOv8", "MobileNet SSD", "
       "/douaatech-portfolio/ScreensForProjetcs/TaskProject/updateStatus.png",
       "/douaatech-portfolio/ScreensForProjetcs/TaskProject/Annotation 2026-05-05 235531.png"
     ]
-  }
+  },
+  
+  {
+  title: "Hotel Management Web Application",
+  desc: "Developed a hotel management web application with room reservation, availability filtering, customer account management, and an interactive user dashboard. Designed a responsive and intuitive interface to simplify hotel booking and management operations.",
+  tech: ["PHP", "MySQL", "JavaScript", "HTML", "CSS", "Bootstrap"],
+  video: "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/20250421_130047.mp4",
+  images: [
+        "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/WhatsApp Image 2026-05-10 at 01.53.25.jpeg",
+    "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/register.jfif",
+    "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/login.jfif",
+        "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/WhatsApp Image 2026-05-10 at 01.53.25.jpeg",
+
+     "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/WhatsApp Image 2026-05-10 at 01.53.27.jpeg",
+    "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/WhatsApp Image 2026-05-10 at 01.53.27 (1).jpeg",
+       "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/WhatsApp Image 2026-05-10 at 01.53.27 (2).jpeg",
+     "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/WhatsApp Image 2026-05-10 at 01.53.29.jpeg",
+
+    "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/WhatsApp Image 2026-05-10 at 01.53.27 (3).jpeg",
+   "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/WhatsApp Image 2026-05-10 at 01.53.28 (1).jpeg",
+    "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/WhatsApp Image 2026-05-10 at 01.53.28.jpeg",
+    "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/WhatsApp Image 2026-05-10 at 01.53.28 (2).jpeg",
+    "/douaatech-portfolio/ScreensForProjetcs/HotelManagment/WhatsApp Image 2026-05-10 at 01.53.28 (4).jpeg",
+  ]
+},{
+  title: "Personal Portfolio Website",
+  desc: "Designed and developed a modern responsive portfolio website to showcase my projects, technical skills, and experience. Includes animated UI components, project galleries, smooth navigation, and a contact form integrated with EmailJS for direct communication.",
+
+  tech: [
+    "React",
+    "Tailwind CSS",
+    "JavaScript",
+    "Vite",
+    "EmailJS",
+    "Framer Motion"
+  ],
+
+  github: "https://github.com/douwa299/douaatech-portfolio",
+
+  live: "https://douwa299.github.io/douaatech-portfolio/",
+
+  images: [
+    "/douaatech-portfolio/home.png"
+  ]
+},
 ];
   return (
     <section
       id="projects"
-      className="min-h-screen flex flex-col items-center py-10"
+      className="min-h-screen flex flex-col items-center py-16 px-4"
     >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">

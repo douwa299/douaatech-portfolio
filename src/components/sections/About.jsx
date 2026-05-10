@@ -26,7 +26,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col items-center justify-around  py-5"
+      className="min-h-screen flex flex-col items-center justify-around  py-16 px-4"
     >
 
       <RevealOnScroll >

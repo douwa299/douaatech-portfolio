@@ -4,7 +4,7 @@ import { RevealOnScroll } from "D:/MyPersonalPortoFolio/src/components/RevealOnS
 
 export const Home = () => {
   const [text, setText] = useState("");
-  const fullText = "Hi, I'm Berrahmo Douaa ";
+  const fullText = "Salam, I'm Berrahmo Douaa ";
 
   useEffect(() => {
     // Reset text immediately when the component mounts
