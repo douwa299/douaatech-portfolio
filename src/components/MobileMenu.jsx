@@ -29,7 +29,13 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
         <a href="#projects" className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${ menuOpen ? "opacity-100 translate-y-0" :"opacity-0 translate-y-5"}`}  onClick={() => setMenuOpen(false)}>Projects</a>
         <a href="#about" className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${ menuOpen ? "opacity-100 translate-y-0" :"opacity-0 translate-y-5"}`}  onClick={() => setMenuOpen(false)}>About</a>
         <a href="#contact" className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${ menuOpen ? "opacity-100 translate-y-0" :"opacity-0 translate-y-5"}`}  onClick={() => setMenuOpen(false)}>Contact</a>
-
+<a
+            href="/douaatech-portfolio/RealCv.pdf"
+            download
+            className={`bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5
+                 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]${ menuOpen ? "opacity-100 translate-y-0" :"opacity-0 translate-y-5"}`}  onClick={() => setMenuOpen(false)}>
+            Download my CV
+          </a>
     </div>
 
   );
