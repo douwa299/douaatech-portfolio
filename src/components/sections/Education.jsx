@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import WorkExperience from "./WorkExperience";
-import { RevealOnScroll } from "D:/MyPersonalPortoFolio/src/components/RevealOnScroll.jsx";
+import { RevealOnScroll } from "../RevealOnScroll.jsx";
 
 const Education = () => {
   const [cardVisible, setCardVisible] = useState({

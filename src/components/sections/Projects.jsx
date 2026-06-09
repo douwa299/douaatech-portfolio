@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { RevealOnScroll } from "D:/MyPersonalPortoFolio/src/components/RevealOnScroll.jsx";
+import { RevealOnScroll } from "../RevealOnScroll.jsx";
 
 export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -33,6 +33,32 @@ export const Projects = () => {
 
   const projects = [
     {
+  title: "AI Resume Analyzer",
+  desc: "Built an AI-powered resume analysis platform that evaluates candidate resumes against job requirements. Users can upload PDF resumes, receive AI-generated feedback, identify strengths and weaknesses, and get actionable recommendations to improve their chances of passing ATS screening systems.",
+  tech: [
+    "React",
+    "React Router",
+    "TypeScript",
+    "TailwindCSS",
+    "Puter.js",
+    "AI APIs",
+    "PDF Processing",
+    "Vite"
+  ],
+  images: [  
+      "/douaatech-portfolio/ScreensForProjetcs/AIResumeAnalyzer/ReviewPage.png",
+
+    "/douaatech-portfolio/ScreensForProjetcs/AIResumeAnalyzer/home.png",
+    "/douaatech-portfolio/ScreensForProjetcs/AIResumeAnalyzer/upload.png",
+        "/douaatech-portfolio/ScreensForProjetcs/AIResumeAnalyzer/apply.png"
+,
+    "/douaatech-portfolio/ScreensForProjetcs/AIResumeAnalyzer/analyzingProcess.png",
+          "/douaatech-portfolio/ScreensForProjetcs/AIResumeAnalyzer/ReviewPage.png",
+
+    "/douaatech-portfolio/ScreensForProjetcs/AIResumeAnalyzer/improvements.png",
+  ]
+}
+,    {
       title: "Face Mask Detection with Model Comparison(YOLOv8/MobileNetSSD)",
       desc: "Built a full computer vision pipeline to detect face masks in real time and compare multiple deep learning models including YOLOv8 and MobileNet SSD. Includes dataset preprocessing, augmentation, training, and evaluation of both models.",
       tech: [

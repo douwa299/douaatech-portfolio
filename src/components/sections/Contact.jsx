@@ -1,4 +1,4 @@
-import { RevealOnScroll } from "D:/MyPersonalPortoFolio/src/components/RevealOnScroll.jsx";
+import { RevealOnScroll } from "../RevealOnScroll.jsx";
 import { useState, useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 

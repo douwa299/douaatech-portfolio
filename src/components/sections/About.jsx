@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Skills from "./Skills";
-import Education from "./Education";
-import WorkExperience from "./WorkExperience";
-import { RevealOnScroll } from "D:/MyPersonalPortoFolio/src/components/RevealOnScroll.jsx";
+
+import { RevealOnScroll } from "../RevealOnScroll.jsx";
 
 // ─── Reusable scroll-reveal hook (triggers every time) ─────────────────────
 const useReveal = (threshold = 0.08) => {
