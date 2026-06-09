@@ -74,16 +74,44 @@ export const Projects = () => {
         "/douaatech-portfolio/ScreensForProjetcs/faceMask/2026-05-06 00-48-01.mp4",
       images: [
         "/douaatech-portfolio/ScreensForProjetcs/faceMask/test2.png",
-        "/douaatech-portfolio/ScreensForProjetcs/faceMask/detection1.png",
-        "/douaatech-portfolio/ScreensForProjetcs/faceMask/detection2.png",
-        "/douaatech-portfolio/ScreensForProjetcs/faceMask/detection3.png",
-        "/douaatech-portfolio/ScreensForProjetcs/faceMask/detection4.png",
+       
         "/douaatech-portfolio/ScreensForProjetcs/faceMask/test1.png",
+       "/douaatech-portfolio/ScreensForProjetcs/faceMask/page1.png",
+
+         "/douaatech-portfolio/ScreensForProjetcs/faceMask/page2.png",
+    "/douaatech-portfolio/ScreensForProjetcs/faceMask/page3.png",
+    "/douaatech-portfolio/ScreensForProjetcs/faceMask/page4.png",
+    "/douaatech-portfolio/ScreensForProjetcs/faceMask/page5.png",
+    "/douaatech-portfolio/ScreensForProjetcs/faceMask/page6.png",
         "/douaatech-portfolio/ScreensForProjetcs/faceMask/test3.png",
         "/douaatech-portfolio/ScreensForProjetcs/faceMask/test4.png",
         "/douaatech-portfolio/ScreensForProjetcs/faceMask/test5.png",
+   
       ],
     },
+    {
+  title: "NYC Taxi Fare Prediction & Peak-Hour Classification",
+  desc: "Built an end-to-end machine learning pipeline using NYC Yellow Taxi data to predict trip fares and classify peak-demand periods. Performed data preprocessing, feature engineering, model optimization, and evaluation using regression and classification techniques. Exported trained models for future inference and analyzed taxi demand patterns through visualizations and geographic insights.",
+  tech: [
+    "Python",
+    "Pandas",
+    "NumPy",
+    "Scikit-Learn",
+    "LightGBM",
+    "Random Forest",
+    "Matplotlib",
+    "Seaborn",
+    "Joblib"
+  ],
+  images: [
+    "/douaatech-portfolio/ScreensForProjetcs/MLTaxiPrediction/page1.png",
+    "/douaatech-portfolio/ScreensForProjetcs/MLTaxiPrediction/page2.png",
+    "/douaatech-portfolio/ScreensForProjetcs/MLTaxiPrediction/page3.png",
+    "/douaatech-portfolio/ScreensForProjetcs/MLTaxiPrediction/page4.png",
+    "/douaatech-portfolio/ScreensForProjetcs/MLTaxiPrediction/page5.png",
+    "/douaatech-portfolio/ScreensForProjetcs/MLTaxiPrediction/page6.png"
+  ]
+},
     {
       title: "Fashion Recommendation System",
       desc: "A machine learning-based recommendation system built on a large-scale H&M dataset. The system analyzes product attributes and user transaction behavior to generate personalized fashion recommendations. It combines clustering (K-Means) and similarity-based search (PCA + Euclidean distance) to suggest visually and semantically similar items in real time.",
