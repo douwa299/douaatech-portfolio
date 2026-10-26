@@ -173,16 +173,24 @@ export const About = () => {
 
             {/* Bio + link col */}
             <div className="lg:w-[55%] flex flex-col justify-between gap-4">
-              <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                I'm{" "}
-                <span className="text-blue-500 dark:text-blue-400 font-semibold">Berrahmo Douaa,</span>{" "}
-                a fourth-year engineering student passionate about software
-                development and web technologies.
-                <span className="block mt-2">
-                  I enjoy building practical projects and turning ideas into
-                  efficient digital solutions.
-                </span>
-              </p>
+             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+  I'm{" "}
+  <span className="text-blue-500 dark:text-blue-400 font-semibold">
+    Berrahmo Douaa,
+  </span>{" "}
+  a fifth-year engineering student passionate about artificial intelligence
+  and full-stack web development, currently looking for a{" "}
+  <span className="text-blue-500 dark:text-blue-400 font-semibold">
+    PFE internship
+  </span>
+  .
+  <span className="block mt-2">
+    I work with LLMs, NLP, machine learning and computer vision, while building scalable,
+    well-structured web applications from backend architecture and APIs
+    to intuitive frontend interfaces. I enjoy transforming ideas into
+    practical, efficient, and intelligent digital solutions.
+  </span>
+</p>
               <a
                 href="#projects"
                 className="view-work-btn group inline-flex items-center gap-3 w-fit cursor-pointer"
