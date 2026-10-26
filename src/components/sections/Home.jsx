@@ -1,5 +1,17 @@
 import { useEffect, useState, useRef } from "react";
 
+// ─── "Open to work" pill ─────────────────────────────────────────────────────
+const OpenToWork = () => (
+  <div className="inline-flex items-center gap-3 rounded-full px-4 py-2 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800">
+    <span className="relative flex h-2.5 w-2.5">
+      <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping" />
+      <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
+    </span>
+    <span className="text-emerald-700 dark:text-emerald-400 text-xs sm:text-sm font-semibold tracking-wide uppercase">
+      Open to PFE Internship · AI & Full-Stack Web
+    </span>
+  </div>
+);
 // ─── Floating particle background ───────────────────────────────────────────
 const ParticleField = () => {
   const particles = Array.from({ length: 18 }, (_, i) => ({
@@ -178,9 +190,9 @@ const ProfileCard = ({ src }) => {
           className="absolute bottom-4 left-4 right-4 bg-white/80 dark:bg-gray-800/90 backdrop-blur-md rounded-2xl px-4 py-3 border border-white/60 dark:border-gray-700"
           style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.08)" }}
         >
-          <p className="text-2xl text-blue-400 dark:text-blue-500 font-semibold tracking-widest uppercase">SOFTWARE & AI Engineer</p>
-          <p className="text-gray-800 dark:text-gray-300 font-bold text-sm uppercase">Berrahmo Douaa</p>
-        </div>
+        <p className="text-lg sm:text-xl text-blue-400 dark:text-blue-500 font-semibold tracking-widest uppercase">AI & Full-Stack Engineer</p>
+<p className="text-gray-800 dark:text-gray-300 font-bold text-sm uppercase">Berrahmo Douaa · PFE 2027</p>
+ </div>
       </div>
 
       <div className="absolute -bottom-6 -right-6 w-24 h-24 opacity-30" style={{ backgroundImage: "radial-gradient(circle, #93c5fd 1.5px, transparent 1.5px)", backgroundSize: "10px 10px" }} />
@@ -293,22 +305,30 @@ export const Home = () => {
               </h1>
             </RevealOnScroll>
 
-            <RevealOnScroll delay={300}>
-              <div className="flex items-center justify-center lg:justify-start mb-8 gap-4">
-                <ShimmerBadge>AI & Software Engineering Student</ShimmerBadge>
-                <div
-                  className="hidden lg:block h-px bg-gradient-to-r from-blue-300 dark:from-blue-600 to-transparent line-grow"
-                  style={{ width: "120px" }}
-                />
-              </div>
-            </RevealOnScroll>
+           <RevealOnScroll delay={300}>
+  <div className="flex flex-col items-center lg:items-start gap-4 mb-8">
+    <div className="flex items-center justify-center lg:justify-start gap-4">
+      <ShimmerBadge>5th-Year Engineering Student · AI & Software</ShimmerBadge>
+      <div
+        className="hidden lg:block h-px bg-gradient-to-r from-blue-300 dark:from-blue-600 to-transparent line-grow"
+        style={{ width: "120px" }}
+      />
+    </div>
+    <OpenToWork />
+  </div>
+</RevealOnScroll>
 
-            <RevealOnScroll delay={450}>
-              <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-xl leading-relaxed mb-12 mx-auto lg:mx-0">
-                Building intelligent applications through AI, computer vision,
-                and modern software engineering.
-              </p>
-            </RevealOnScroll>
+          <RevealOnScroll delay={450}>
+  <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-xl leading-relaxed mb-12 mx-auto lg:mx-0">
+    A <span className="font-semibold text-gray-800 dark:text-white">5th-year engineering student</span>{" "}
+    looking for a{" "}
+    <span className="font-semibold text-blue-600 dark:text-blue-400">PFE internship</span>{" "}
+    in <span className="font-semibold text-blue-600 dark:text-blue-400">AI</span> and{" "}
+    <span className="font-semibold text-blue-600 dark:text-blue-400">full-stack web development</span>.
+    I build intelligent applications with LLMs, NLP, and computer vision,
+    backed by solid modern web engineering.
+  </p>
+</RevealOnScroll>
 
             <RevealOnScroll delay={600}>
               <MagneticCTA href="#projects" />

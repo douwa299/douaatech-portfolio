@@ -115,7 +115,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
             {/* Desktop Download CV Button */}
             <a
-              href="/douaatech-portfolio/CV_Douaa_Berrahmo.pdf"
+              href="/douaatech-portfolio/BerrahmoDouaa_CV.pdf"
               download
               className="hidden md:block bg-gradient-to-r from-blue-500 to-blue-600 text-white px-5 py-2.5 rounded-lg font-medium transition-all duration-300 relative overflow-hidden hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-200/50 dark:hover:shadow-blue-900/50 group"
             >
@@ -184,7 +184,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           </a>
 
           <a
-            href="/douaatech-portfolio/CV_Douaa_Berrahmo.pdf"
+            href="/douaatech-portfolio/BerrahmoDouaa_CV.pdf"
             download
             onClick={() => setMenuOpen(false)}
             className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-200/50 dark:hover:shadow-blue-900/50"

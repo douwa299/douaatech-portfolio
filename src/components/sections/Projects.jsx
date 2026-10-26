@@ -33,6 +33,31 @@ export const Projects = () => {
 
   const projects = [
     {
+title: "AI-Powered CNIE OCR and Notarial Act Generation Automation",
+  desc: "Intelligent document processing solution for Moroccan notarial documents, combining document layout detection, Arabic and French text extraction, and structured information generation. Uses YOLOv8 for document region detection and Qwen2.5-VL for OCR and information extraction, with automated Word report generation to simplify notarial workflows.",
+  tech: [
+    "Python",
+    "YOLOv8",
+    "Qwen2.5-VL",
+    "Computer Vision",
+    "OCR",
+    "LLMs",
+    "FastAPI",
+    "Flask",
+    "React",
+    "Tailwind CSS",
+    "docxtpl",
+    "python-docx",
+  ],
+  video: "",
+  images: [
+    // Add your project screenshots here
+    "/douaatech-portfolio/ScreensForProjetcs/NotarialAI/cnie1.png",
+    "/douaatech-portfolio/ScreensForProjetcs/NotarialAI/propriete.png",
+    "/douaatech-portfolio/ScreensForProjetcs/NotarialAI/cnie3.png",
+  ],
+},
+    {
   title: "AI Resume Analyzer",
   desc: "Built an AI-powered resume analysis platform that evaluates candidate resumes against job requirements. Users can upload PDF resumes, receive AI-generated feedback, identify strengths and weaknesses, and get actionable recommendations to improve their chances of passing ATS screening systems.",
   tech: [
@@ -58,7 +83,26 @@ export const Projects = () => {
     "/douaatech-portfolio/ScreensForProjetcs/AIResumeAnalyzer/improvements.png",
   ]
 }
-,    {
+,  
+{
+  title: "Pharmacy Stock Management System - En Cours",
+  desc: "Built a full-stack pharmacy inventory management application featuring medication management, stock tracking, supplier administration, and order processing. The system provides an intuitive dashboard for monitoring inventory operations and managing pharmacy data through CRUD functionalities and RESTful APIs.",
+  tech: [
+    "React",
+    "TypeScript",
+    "Spring Boot",
+    "Java",
+    "SQL",
+    "REST API",
+    "TailwindCSS"
+  ],
+  images: [
+    "/douaatech-portfolio/ScreensForProjetcs/PharmaStock/dashboard.png",
+    "/douaatech-portfolio/ScreensForProjetcs/PharmaStock/add.png",
+    "/douaatech-portfolio/ScreensForProjetcs/PharmaStock/details.png",
+    "/douaatech-portfolio/ScreensForProjetcs/PharmaStock/edit.png"
+  ]
+},  {
       title: "Face Mask Detection with Model Comparison(YOLOv8/MobileNetSSD)",
       desc: "Built a full computer vision pipeline to detect face masks in real time and compare multiple deep learning models including YOLOv8 and MobileNet SSD. Includes dataset preprocessing, augmentation, training, and evaluation of both models.",
       tech: [
